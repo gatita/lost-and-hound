@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 
+{% load staticfiles %}
+
 <html>
 <head>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
     <title>Lost and Hound</title>
     {% block head %}
     {% endblock %}
