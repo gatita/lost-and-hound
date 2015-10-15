@@ -20,9 +20,10 @@
                 accessToken: 'pk.eyJ1IjoiZ2F0aXRhIiwiYSI6ImNpZnJvejdkNjBtdTFzNm02MTQ3c3F6M2IifQ.E_QkI0IcAmSmOPAbsI_qow'
             }).addTo(map);
 
-            map.locate({setView: true, maxZoom: 18});
-        };
+            map.setView([47.61264, -122.32109], 11);
 
+            map.locate({setView: true, maxZoom: 15});
+        };
         
     </script>   
 {% endblock %}
