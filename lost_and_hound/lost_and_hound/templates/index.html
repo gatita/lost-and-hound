@@ -15,11 +15,14 @@
 
         function mapInit(map, options) {
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                attribution: 'contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-                maxZoom: 18,
+                attribution: '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
                 id: 'gatita.nn6p000m',
                 accessToken: 'pk.eyJ1IjoiZ2F0aXRhIiwiYSI6ImNpZnJvejdkNjBtdTFzNm02MTQ3c3F6M2IifQ.E_QkI0IcAmSmOPAbsI_qow'
             }).addTo(map);
+
+            map.locate({setView: true, maxZoom: 18});
         };
+
+        
     </script>   
 {% endblock %}
